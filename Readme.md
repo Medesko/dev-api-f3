@@ -1,6 +1,4 @@
 # API FAT FEED FRAMEWORK
-
-# Endpoints
 ```
 User login 
 ```
