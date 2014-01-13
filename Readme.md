@@ -1,5 +1,18 @@
-# API 
+# API FAT FEED FRAMEWORK
+
 # Endpoints
 ```
-GET /
+User login 
+```
+
+```
+Facebook connect
+```
+
+```
+Google connect
+```
+
+```
+Twitter connect
 ```
