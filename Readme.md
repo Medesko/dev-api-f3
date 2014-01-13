@@ -1,5 +1,4 @@
-# API Documention
-# Author : Mohamed
+# API 
 # Endpoints
 ```
 GET /
