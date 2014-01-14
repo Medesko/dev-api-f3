@@ -45,7 +45,7 @@ Get All Users
 ```
 ## Demo
 
-Url: (http://localhost/dev-api-f3/users/get_all_users)
+Url: [http://localhost/dev-api-f3/users/get_all_users]
 
 
 ```
