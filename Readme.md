@@ -1,5 +1,5 @@
 # API CINE
-## Structure
+###1 Structure
 
 ```
 .
@@ -32,19 +32,21 @@
 │       └── google
 
 ```
-
+###2. Facebook
 ```
 Facebook connect
 ```
-```
-Insert User by Facebook connect
+###3. Insert User By Facebook
 ```
 http://localhost/dev-api-f3/facebook/get_url
 ```
-Get All Users
+
+```
+###4. Get All Users 
 ```
 http://localhost/dev-api-f3/users/get_all_users
-
+```
+###4. Get User 
 ```
 Get User
 ```
