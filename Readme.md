@@ -41,7 +41,6 @@ Facebook connect
 http://localhost/dev-api-f3/facebook/get_url
 ```
 
-```
 ###4. Get All Users 
 ```
 http://localhost/dev-api-f3/users/get_all_users
