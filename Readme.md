@@ -6,11 +6,14 @@ User login
 ```
 Facebook connect
 ```
+```
+Insert User by Facebook connect
+```
 
 ```
-Google connect
+Get All Users
 ```
 
 ```
-Twitter connect
+Get User
 ```
