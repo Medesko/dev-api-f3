@@ -4,7 +4,7 @@
 ```
 .
 ├── api
- ├── controllers
+│   ├── controllers
 │   │   ├── fb_controller.php
 │   │   └── Users.php
 │   ├── configs
