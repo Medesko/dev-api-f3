@@ -44,9 +44,7 @@ Insert User by Facebook connect
 Get All Users
 ```
 ## Demo
-
-Url: [http://localhost/dev-api-f3/users/get_all_users]
-
+http://localhost/dev-api-f3/users/get_all_users
 
 ```
 Get User
