@@ -1,7 +1,4 @@
 # API CINE
-```
-User login 
-```
 
 ```
 Facebook connect
