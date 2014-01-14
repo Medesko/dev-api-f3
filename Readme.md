@@ -39,11 +39,10 @@ Facebook connect
 ```
 Insert User by Facebook connect
 ```
-
+http://localhost/dev-api-f3/facebook/get_url
 ```
 Get All Users
 ```
-## Demo
 http://localhost/dev-api-f3/users/get_all_users
 
 ```
