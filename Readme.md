@@ -1,4 +1,4 @@
-# API CINE
+## API CINE DEV
 ###1 Structure
 
 ```
@@ -32,20 +32,25 @@
 │       └── google
 
 ```
-###2. Facebook
+###2. Get Facebook token
 ```
-Facebook connect
-```
-###3. Insert User By Facebook
-```
-http://localhost/dev-api-f3/facebook/get_url
+http://localhost/dev-api-f3/users/login
 ```
 
-###4. Get All Users 
+###3. Get All Users 
 ```
-http://localhost/dev-api-f3/users/get_all_users
+http://localhost/dev-api-f3/users/list_user
 ```
 ###4. Get User 
 ```
-Get User
+http://localhost/dev-api-f3/users/15?token_access=3b8aff744e0d7d402cef967eedfff1c1
+```
+
+###5. POST User 
+```
+http://localhost/dev-api-f3/users/insert_user 
+```
+###6. DELETE User 
+```
+DELETE /users/@id = Users->deleteUser
 ```
