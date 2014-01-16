@@ -40,7 +40,7 @@ http://localhost/dev-api-f3/users/login
 ```
 http://localhost/dev-api-f3/users/list_user
 ```
-###4. Get User 
+###4. Get User by id and Token
 ```
 http://localhost/dev-api-f3/users/15?token_access=3b8aff744e0d7d402cef967eedfff1c1
 ```
@@ -52,4 +52,18 @@ http://localhost/dev-api-f3/users/insert_user
 ###6. DELETE User 
 ```
 DELETE /users/@id = Users->deleteUser
+```
+###1. Get All Movies  
+```
+http://localhost/dev-api-f3/movies/list_movies
+```
+
+###2. Get Movie by id  
+```
+http://localhost/dev-api-f3/movies/1
+```
+
+###3. POST Movies id, tile, details 
+```
+http://localhost/dev-api-f3/movies/insert_movie 
 ```
