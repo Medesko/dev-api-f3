@@ -2,7 +2,6 @@
 ###1 Structure
 
 ```
-.
 ├── api
 │   ├── controllers
 │   │   ├── fb_controller.php
