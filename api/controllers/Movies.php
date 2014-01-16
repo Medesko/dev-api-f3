@@ -64,6 +64,7 @@ Class Movies{
 
 		}
 	}
+	
 	//PUT 
 	public function updateMovie()
 	{

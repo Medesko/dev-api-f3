@@ -16,6 +16,7 @@ class ORMListMovies extends ORM {
       	               Api::response(404, array(), 'Not Found');
       	       }
          }
+         
 
       	public function insertListMovie($id, $genre) {
       	   $movie = new ORMMovies();
