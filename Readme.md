@@ -32,7 +32,7 @@
 │       └── google
 
 ```
-###2. GET Facebook token
+###2. Get Facebook token
 ```
 http://localhost/dev-api-f3/users/login
 ```
