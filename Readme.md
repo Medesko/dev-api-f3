@@ -50,7 +50,7 @@ http://localhost/dev-api-f3/users/15?token_access=3b8aff744e0d7d402cef967eedfff1
 ```
 http://localhost/dev-api-f3/users/insert_user 
 ```
-###6. POST User 
+###6. DELETE User 
 ```
 DELETE /users/@id = Users->deleteUser
 ```
