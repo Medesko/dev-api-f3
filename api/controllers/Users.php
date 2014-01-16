@@ -135,6 +135,4 @@ class Users {
 			Api::response(400, array(), 'User does not exist');
 		}
 	}
-
-
 }
