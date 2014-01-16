@@ -32,9 +32,9 @@
 │       └── google
 
 ```
-###2. Facebook
+###2. GET Facebook token
 ```
-GET /users/login = Users->fbConnect
+http://localhost/dev-api-f3/users/login
 ```
 
 ###3. Get All Users 
