@@ -2,6 +2,11 @@
 
 class Api{
         
+        public function __construct()
+        {
+
+        }
+
         public static function response($code, $data, $error = false){
 
                 header('Content-type: application/json; charset=utf-8');
@@ -18,7 +23,7 @@ class Api{
                         }
                 }
 
-                print json_encode($response);
+                echo json_encode($response);
         }
 
         private static function status($code){
@@ -27,6 +32,9 @@ class Api{
                                 return $status = $code . 'OK';
                                 break;
 
+                        case 400:
+                                return $status = $code . 'Bad Request';
+                                break;
                         case 400:
                                 return $status = $code . 'Bad Request';
                                 break;
@@ -40,4 +48,5 @@ class Api{
                                 break;
                 }
         }
+
 }

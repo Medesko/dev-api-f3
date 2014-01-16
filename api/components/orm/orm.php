@@ -69,6 +69,29 @@ abstract class ORM {
                 }
         }
 
+        public function query($query, $fetchAll = false, $values = array(), $toObj = false) {
+                $bdd = $this->getConnection($this);
+                $req = $bdd->prepare($query);
+                if($req->execute($values)) {
+                        if(strpos($query, 'SELECT') !== false) {
+                                if($fetchAll) {
+                                        return $req->fetchAll(PDO::FETCH_ASSOC);
+                                } else {
+                                        $result = $req->fetch(PDO::FETCH_ASSOC);
+                                        if($toObj && $result) {
+                                                foreach($result as $key => $val)
+                                                        $this->$key = $val;
+                                        }
+                                        return $result;
+                                }
+                        } else {
+                                return true;
+                        }
+                } else {
+                        return false;
+                }
+        }
+
         public function find($whereValue = null) {
                 $bdd = $this->getConnection($this);
                 if ($whereValue == null) {
@@ -204,6 +227,16 @@ abstract class ORM {
                 return $this;
         }
 
+        public function deleteAll() {
+                $bdd = $this->getConnection($this);
+                $req = $bdd->query('DELETE FROM ' . $this->_config['table']);
+                if(!$req->execute()) {                
+                        echo 'Une erreur est survenue (DELETE ALL)';
+                        exit();
+                }
+                return $this;
+        }
+
         public function insert() {
                 $bdd = $this->getConnection($this);
 
@@ -259,7 +292,6 @@ abstract class ORM {
         }
 }
 
-// exit('toto');
 // foreach(glob($_SERVER['DOCUMENT_ROOT'] . "/cine/lib/orm/models/*.class.php") as $filename) {
 //         require_once $filename;
 // }

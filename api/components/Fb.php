@@ -16,7 +16,8 @@ class Fb {
 
 	public function getLoginUrl()
 	{
-		return $this->facebook->getLoginUrl(array("scope" => "email"));
+		header('Location:'.$this->facebook->getLoginUrl(array("scope" => "email")));
+		exit();
 	}
 
 	public function getUser()
@@ -24,7 +25,8 @@ class Fb {
 		if($this->facebook->getUser() != 0){
 			return $this->facebook->api('/me');
 		}else{
-			return null;
+			header('Location:'.$this->facebook->getLoginUrl(array("scope" => "email")));
+			exit();
 		}
 	}
 

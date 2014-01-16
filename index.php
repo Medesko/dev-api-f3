@@ -15,13 +15,4 @@ $f3->route('GET /',
 		echo View::instance()->render('layout.htm');
 	}
 );
-
-$user = new ORMUsers();
-
-// // $user->name = 'Haris';
-// // $user->email = 'haris@cifacom.com';
-// // $user->insert();
-// //var_dump($data);
-
-
 $f3->run();

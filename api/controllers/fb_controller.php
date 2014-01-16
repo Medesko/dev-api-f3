@@ -7,7 +7,7 @@
  		$this->facebook = new Fb();
  	}
 
- 	public function getUrl()
+ 	public function getLogin()
  	{	
  		Api::response(200, $this->facebook->getLoginUrl());
  		
