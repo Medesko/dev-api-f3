@@ -7,17 +7,17 @@ define('DB_PASS', 'root');
 
 abstract class ORM {
         public $_config = array(
-                'table'                        => "",
-                'primarykey'        => array(),
-                'columns'                => array(),
-                'tableJoin'                => "",
-                'leftJoinRow'        => "",
-                'rightJoinRow'        => "",
-                'queryJoin'                => ""
+                'table'                 => "",
+                'primarykey'    => array(),
+                'columns'               => array(),
+                'tableJoin'             => "",
+                'leftJoinRow'   => "",
+                'rightJoinRow'  => "",
+                'queryJoin'             => ""
         );
 
-        public function __construct() {
-                // What ?...
+        public function __construct($whereValue = null) {
+                if($whereValue != null) $this->find($whereValue);
         }
 
         public static function getConnection($obj = null) {
@@ -143,7 +143,7 @@ abstract class ORM {
                         $whereValue = array( $primarykey => $this->$primarykey );
                 } else if (!is_array($whereValue)) {
                         $whereValue = array( $this->_config['primarykey'][$this->_config['table']] => $whereValue );
-                }                
+                }               
                 $valueArr = array();
                 $query = 'SELECT * FROM ' . $this->_config['table'] . ' ' . $this->_config['queryJoin'] . ' WHERE ';
                 foreach ($whereValue as $key => $val) {
@@ -190,12 +190,12 @@ abstract class ORM {
                                 }
                         }
                 }
-                $query = substr($query, 0, -1) . ' WHERE ';                
+                $query = substr($query, 0, -1) . ' WHERE ';             
                 foreach ($whereValue as $key => $val) {
                         $query .= $key . ' = :w_' . $key . ' AND ';
                         $valueArr['w_'.$key] = $val;
-                }                
-                $query = substr($query, 0, -5);                
+                }               
+                $query = substr($query, 0, -5);         
                 $req = $bdd->prepare($query);
                 if(!$req->execute($valueArr)) {
                         echo 'Une erreur est survenue (UPDATE)';
@@ -220,7 +220,7 @@ abstract class ORM {
                 }
                 $query = substr($query, 0, -5);
                 $req = $bdd->prepare($query);
-                if(!$req->execute($valueArr)) {                
+                if(!$req->execute($valueArr)) {         
                         echo 'Une erreur est survenue (DELETE)';
                         exit();
                 }
@@ -230,7 +230,7 @@ abstract class ORM {
         public function deleteAll() {
                 $bdd = $this->getConnection($this);
                 $req = $bdd->query('DELETE FROM ' . $this->_config['table']);
-                if(!$req->execute()) {                
+                if(!$req->execute()) {          
                         echo 'Une erreur est survenue (DELETE ALL)';
                         exit();
                 }

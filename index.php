@@ -11,8 +11,8 @@ $f3->config('api/configs/config.ini');
 $f3->config('api/configs/routes.ini');
 $f3->route('GET /',
 	function($f3) {
-		$f3->set('content','index.htm');
-		echo View::instance()->render('layout.htm');
+		$f3->set('content','index.php');
+		echo View::instance()->render('layout.php');
 	}
 );
 $f3->run();

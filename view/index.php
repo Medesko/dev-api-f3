@@ -8,13 +8,13 @@
 				<header>
 				</header>
 				<div class="right">
-	<!-- 			<aside class="clearfix">
+				<aside class="clearfix">
 					<ul>
 						<li>
-							<a href="#">Facebook connect</a>
+							<a href="./users/login">Facebook connect</a>
 						</li>
 					</ul>
-				</aside> -->
+				</aside>
 			</div>
 		</div>
 	</section>

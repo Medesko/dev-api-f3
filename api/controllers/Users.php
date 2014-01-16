@@ -8,11 +8,10 @@ class Users {
 		$this->facebook = new Fb();
 	}
 	//API - RESTless  GET
-	public function fbConnect()
+	public function fbConnect($f3, $json)
 	{
 		$facebook = new Fb();
 		$data_user = $facebook->getUser();
-		 var_dump($data_user);
 		if ($data_user === null) 
 		{
 			$this->facebook->getUser();
@@ -26,9 +25,11 @@ class Users {
 				$user->email = $data_user['email'];
 				$user->token = md5(uniqid($data_user['email']));
 				$register = $user->insert();
-			}
-			Api::response(200, array('token'=>$user->token));
 
+			}
+				// $json = $f3->mock('GET /users/login');
+				$f3->set('content','dashboard.php');
+				echo View::instance()->render('layout.php');
 		}
 	}
 	//API - RESTless  POST
