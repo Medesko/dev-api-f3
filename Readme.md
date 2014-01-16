@@ -55,7 +55,7 @@ DELETE /users/@id = Users->deleteUser
 ```
 ###7. Get All Movies  
 ```
-http://localhost/dev-api-f3/movies/list_movies
+http://localhost/dev-api-f3/movies/
 ```
 
 ###8. Get Movie by id  
