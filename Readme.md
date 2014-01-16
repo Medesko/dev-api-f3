@@ -63,7 +63,7 @@ http://localhost/dev-api-f3/movies/list_movies
 http://localhost/dev-api-f3/movies/1
 ```
 
-###9. POST Movies id, tile, details 
+###9. Insert id, title, details of  Movies 
 ```
 http://localhost/dev-api-f3/movies/insert_movie 
 ```
