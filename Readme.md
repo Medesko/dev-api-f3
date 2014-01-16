@@ -53,17 +53,17 @@ http://localhost/dev-api-f3/users/insert_user
 ```
 DELETE /users/@id = Users->deleteUser
 ```
-###1. Get All Movies  
+###7. Get All Movies  
 ```
 http://localhost/dev-api-f3/movies/list_movies
 ```
 
-###2. Get Movie by id  
+###8. Get Movie by id  
 ```
 http://localhost/dev-api-f3/movies/1
 ```
 
-###3. POST Movies id, tile, details 
+###9. POST Movies id, tile, details 
 ```
 http://localhost/dev-api-f3/movies/insert_movie 
 ```
