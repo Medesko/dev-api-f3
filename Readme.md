@@ -36,9 +36,9 @@
 http://localhost/dev-api-f3/users/login
 ```
 
-###3. Get All Users 
+###3. Get All Users Admin token
 ```
-http://localhost/dev-api-f3/users/list_user
+http://localhost/dev-api-f3/users/?token_access=5460db491a656bb98da693f8e090f5fa
 ```
 ###4. Get User by id and Token
 ```
