@@ -67,3 +67,8 @@ http://localhost/dev-api-f3/movies/1
 ```
 http://localhost/dev-api-f3/movies/insert_movie 
 ```
+
+###10. DELETE Movie by id
+```
+http://localhost/dev-api-f3/movies/1 
+```
