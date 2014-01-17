@@ -95,26 +95,26 @@ http://localhost/dev-api-f3/movies/insert_movie
 http://localhost/dev-api-f3/movies/1 
 ```
 
-###10. DELETE Movie by id
+###14. DELETE Movie by id
 ```
 http://localhost/dev-api-f3/movies/1 
 ```
 
-###11. DELETE like Movie by id and Token 
+###15. DELETE like Movie by id and Token 
 ```
 http://localhost/dev-api-f3/movies/1/likes/?token_access=5460db491a656bb98da693f8e090f5fa
 ```
 
-###11. DELETE See Movie by id and Token
+###16. DELETE See Movie by id and Token
 ```
 http://localhost/dev-api-f3/movies/1/seen/?token_access=5460db491a656bb98da693f8e090f5fa
 ```
 
-###12. DELETE favoris Movie by id and Token
+###17. DELETE favoris Movie by id and Token
 ```
 http://localhost/dev-api-f3/movies/1/favoris/?token_access=5460db491a656bb98da693f8e090f5fa
 ```
-###13. UPDATE favoris Movie by id and Token
+###18. UPDATE favoris Movie by id and Token
 ```
 http://localhost/dev-api-f3/movies/1/?token_access=5460db491a656bb98da693f8e090f5fa
 ```
